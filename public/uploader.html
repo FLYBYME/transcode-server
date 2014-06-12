@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap 101 Template</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+
+	</head>
+	<body>
+		<!-- BOOTSTRAP 3.x LAYOUT -->
+		<div class="navbar-wrapper">
+			<div class="container">
+
+				<div class="navbar navbar-inverse navbar-static-top">
+					<div class="container">
+						<a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+						<a class="navbar-brand" href="#">Bootstrap 3</a>
+						<div class="nav-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="/">Home</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- JavaScript plugins (requires jQuery) -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+
+
+		<div class="container">
+
+			<div class="container marketing">
+				<!-- Three columns of text below the carousel -->
+				<div class="row ap-row">
+					<div class="bs-example">
+						<form method="post" enctype="multipart/form-data" action="/encode-server/file-upload">
+							<input type="file" name="video">
+							<input type="submit">
+						</form>
+					</div>
+				</div><!-- /.row -->
+				<hr class="featurette-divider">
+				<div class="row ap-row">
+					<div class="bs-example">
+						<form role="form" method="post" enctype="application/x-www-form-urlencoded" action="/encode-server/add">
+							<div class="form-group">
+								<label class="sr-only" for="filepath">File Path</label>
+								<input type="text" class="form-control" id="filepath" placeholder="test.mkv" name="filepath">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="encodetype">Encode Type</label>
+								<select required multiple class="form-control" id="encodetype" name="encodetype">
+									<option>webm</option>
+									<option>mp4</option>
+								</select>
+							</div>
+
+							<button type="submit" class="btn btn-default">
+								Sign in
+							</button>
+						</form>
+					</div>
+				</div><!-- /.row -->
+			</div>
+
+			<hr class="featurette-divider">
+			<footer>
+
+				<p class="pull-right">
+					<a href="#">Back to top</a>
+				</p>
+				<p>
+					Bootstrap layout is compliments of Bootply. · <a href="http://www.bootply.com">Edit on Bootply.com</a>
+				</p>
+
+			</footer>
+		</div><!-- /.container -->
+		<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+
+	</body>
+</html>
